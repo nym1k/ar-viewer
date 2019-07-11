@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<!-- include A-Frame obviously -->
+<script src="aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs>
+    <a-assets>
+        <img id="transpImage" src="test.jpg">
+    </a-assets>
+    <a-image width="4" height="3" position="0 0 0" rotation="-90 0 0" scale="1 1 1" src="#transpImage"></a-image>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+</body>
+</html>
